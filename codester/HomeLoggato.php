@@ -64,14 +64,14 @@
                         <div class="nav-collapse nav-collapse_  collapse">
                             <ul class="nav sf-menu">
                                 <li class="active"><a href="index.html">Home</a></li>
-                                <li class="sub-menu"><a href="process.html">Auto</a>
+                                <li><a href="work.html">Auto</a></li>
+                                <li class="sub-menu"><a href="process.html">Profilo</a>
                                     <ul>
-                                        <li><a href="#">Fiat</a></li>
-                                        <li><a href="#">Alfa Romeo</a></li>
-                                        <li><a href="#">Peugeot</a></li>
+                                        <li><a href="#">Visualizza</a></li>
+                                        <li><a href="#">Modifica</a></li>
+                                        <li><a href="#">Logout</a></li>
                                     </ul>
-                                </li>                                <li><a href="">Login</a></li>
-                                <li><a href="">Registrati</a></li>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -91,18 +91,19 @@
                 <!-- slider -->
                 <div class="flexslider">
                     <ul class="slides">
-                        <li> <img src="img/Car/Kangoo.jpg" alt=""> </li>
-                        <li> <img src="img/Car/range.jpg" alt=""> </li>
-                        <li> <img src="img/Car/Kangoo.jpg" alt=""> </li>
-                        <li> <img src="img/Car/range.jpg" alt=""> </li>
-                        <li> <img src="img/Car/Kangoo.jpg" alt=""> </li>
+                        <li> <img src="img/slide-1.jpg" alt=""> </li>
+                        <li> <img src="img/slide-2.jpg" alt=""> </li>
+                        <li> <img src="img/slide-3.jpg" alt=""> </li>
+                        <li> <img src="img/slide-4.jpg" alt=""> </li>
+                        <li> <img src="img/slide-5.jpg" alt=""> </li>
                     </ul>
                 </div>
                 <span id="responsiveFlag"></span>
                 <div class="block-slogan">
-                    <h2>Auto per tutti!</h2>
+                    <h2>Namaskar!</h2>
                     <div>
-                        <p>Su Vintage Express puoi trovare una lista di auto dedite al trasporto per disabili. Mettiti in contatto con la più vicina concessionaria, grazie alle informazioni che troverai per ogni autoveicolo</p>
+                        <p>This template is designed and developed over the Bootstrap frontend framework. Which is a free front-end framework for designers. Template is fully <i>responsive</i> and <i>compatible</i> with all the major browsers.</p>
+                        <p style="text-align:center; padding-top:20px;"><a href="#" class="btn btn-1">Download Bootstrap</a></p>
                     </div>
                 </div>
             </div>
