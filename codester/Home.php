@@ -59,7 +59,7 @@
             <div class="span12">
                 <div class="navbar navbar_">
                     <div class="container">
-                        <h1 class="brand brand_"><a href="HomeLoggato.php"><img alt="" src="img/logo2.png"> </a></h1>
+                        <h1 class="brand brand_"><a href="HomeLoggato.php"><img alt="" src="img/logo3.png"> </a></h1>
                         <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
                         <div class="nav-collapse nav-collapse_  collapse">
                             <ul class="nav sf-menu">
@@ -70,8 +70,8 @@
                                         <li><a href="#">Alfa Romeo</a></li>
                                         <li><a href="#">Peugeot</a></li>
                                     </ul>
-                                </li>                                <li><a href="">Login</a></li>
-                                <li><a href="">Registrati</a></li>
+                                </li>
+                                <li><a href="Login.php">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
             <div class="container">
                 <div class="row">
                     <article class="span12">
-                        <h4>Our Work</h4>
+                        <h4>Le più gettonate</h4>
                     </article>
                     <div class="clear"></div>
                     <ul class="portfolio clearfix">
@@ -257,6 +257,8 @@
         </div>
     </div>
 </div>
+
+
 <!-- footer -->
 <footer>
     <div class="container clearfix">

@@ -48,6 +48,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
     <![endif]-->
 </head>
+
 <body>
 
 <div class="spinner"></div>
@@ -59,11 +60,11 @@
             <div class="span12">
                 <div class="navbar navbar_">
                     <div class="container">
-                        <h1 class="brand brand_"><a href="HomeLoggato.php"><img alt="" src="img/logo2.png"> </a></h1>
+                        <h1 class="brand brand_"><a href="Home.php"><img alt="" src="img/logo2.png"> </a></h1>
                         <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
                         <div class="nav-collapse nav-collapse_  collapse">
                             <ul class="nav sf-menu">
-                                <li class="active"><a href="index.html">Home</a></li>
+                                <li class="active"><a href="Home.php">Home</a></li>
                                 <li class="sub-menu"><a href="process.html">Auto</a>
                                     <ul>
                                         <li><a href="#">Fiat</a></li>
@@ -82,15 +83,99 @@
 </header>
 
 <div class="bg-content">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <div class="flexslider">
-                </div>
+
+    <div id="content" >
+        <div class="ic" ></div>
+        <div class="container">
+            <div class="row">
+                <article class="span6">
+                    <h3>Login</h3>
+                    <div class="inner-1">
+                        <form id="contact-form" action="#">
+                            <div class="success"> Your message has been sent succesfuly!<strong> We will be in touch soon.</strong> </div>
+                            <fieldset>
+                                <div>
+                                    <label class="name">
+                                        <input type="text" placeholder="Email">
+                                        <br>
+                                        <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="phone">
+                                        <input type="tel" placeholder="Password" ">
+                                        <br>
+                                        <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
+                                </div>
+                                <div class="buttons-wrapper"><a class="btn btn-1" data-type="submit">Login</a><a class="btn btn-1" data-type="reset">Password dimenticata?</a> </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </article>
+                <article class="span6">
+                    <h3>Registrati</h3>
+                    <div class="inner-1">
+                        <form id="contact-form" action="#">
+                            <div class="success"> Your message has been sent succesfuly!<strong> We will be in touch soon.</strong> </div>
+                            <fieldset>
+                                <div>
+                                    <label class="name">
+                                        <input type="text" placeholder="Nome">
+                                        <br>
+                                        <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="phone">
+                                        <input type="tel" placeholder="Email">
+                                        <br>
+                                        <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="email">
+                                        <input type="email" placeholder="Password">
+                                        <br>
+                                        <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
+                                </div>
+                                <div class="buttons-wrapper"> <a class="btn btn-1" data-type="reset">Cancella</a> <a class="btn btn-1" data-type="submit">Registrati</a></div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </article>
+
             </div>
+            <div class="row">
+                <article class="span12">
+                    <h4>Services</h4>
+                </article>
+                <div class="clear"></div>
+                <ul class="thumbnails thumbnails-1 list-services">
+                    <li class="span4">
+                        <div class="thumbnail thumbnail-1"> <img src="img/service-1.jpg" alt="">
+                            <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
+                                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div class="thumbnail thumbnail-1"> <img src="img/service-2.jpg" alt="">
+                            <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
+                                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div class="thumbnail thumbnail-1"> <img src="img/service-3.jpg" alt="">
+                            <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
+                                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+                            </section>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </div>
+
 
 </body>
 
