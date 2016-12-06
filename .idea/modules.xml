@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PHPdazero/.idea/PHPdazero.iml" filepath="$PROJECT_DIR$/../PHPdazero/.idea/PHPdazero.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/VintageExpress.iml" filepath="$PROJECT_DIR$/.idea/VintageExpress.iml" />
     </modules>
   </component>

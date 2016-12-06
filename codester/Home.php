@@ -64,13 +64,7 @@
                         <div class="nav-collapse nav-collapse_  collapse">
                             <ul class="nav sf-menu">
                                 <li class="active"><a href="index.html">Home</a></li>
-                                <li class="sub-menu"><a href="process.html">Auto</a>
-                                    <ul>
-                                        <li><a href="#">Fiat</a></li>
-                                        <li><a href="#">Alfa Romeo</a></li>
-                                        <li><a href="#">Peugeot</a></li>
-                                    </ul>
-                                </li>
+                                <li class="sub-menu"><a href="#">Auto</a href=""></li>
                                 <li><a href="Login.php">Login</a></li>
                             </ul>
                         </div>
@@ -91,11 +85,12 @@
                 <!-- slider -->
                 <div class="flexslider">
                     <ul class="slides">
-                        <li> <img src="img/Car/Kangoo.jpg" alt=""> </li>
-                        <li> <img src="img/Car/range.jpg" alt=""> </li>
-                        <li> <img src="img/Car/Kangoo.jpg" alt=""> </li>
-                        <li> <img src="img/Car/range.jpg" alt=""> </li>
-                        <li> <img src="img/Car/Kangoo.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Ducato.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Scudo.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Doblo.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Ducato.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Doblo.jpg" alt=""> </li>
+
                     </ul>
                 </div>
                 <span id="responsiveFlag"></span>
