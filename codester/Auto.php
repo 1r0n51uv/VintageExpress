@@ -1,3 +1,16 @@
+<?php
+include 'Queries.php';
+
+$db = new Connector();
+$sql = "SELECT * FROM Annuncio";
+$result = mysqli_query($db->getConnector(), $sql);
+$num_righe = mysqli_num_rows($result);
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,22 +91,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="bg-content">
     <!-- Content -->
     <div id="content">
@@ -101,27 +98,32 @@
         <div class="container">
             <div class="row">
                 <article class="span12">
-                    <h4>Portfolio</h4>
+                    <h4>Le nostre auto</h4>
                 </article>
                 <div class="clear"></div>
                 <ul class="portfolio clearfix">
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/1.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/2.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/3.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/4.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/5.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/6.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/7.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/8.jpg"></a></li>
-                    <div class="clear"></div>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/9.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/10.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/11.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/12.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/13.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/14.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/15.jpg"></a></li>
-                    <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/16.jpg"></a></li>
+
+                    <?php
+                    for ($i = 0; $i < $num_righe; $i++) {
+                        $riga = mysqli_fetch_row($result);
+
+                        ?>
+
+                        <li class="box">
+                            <a href="<?php echo $riga[5]?>" class="magnifier">
+                                <img alt="" src="<?php echo $riga[6]?>" href="Custom.php">
+                            </a>
+                            <div style="font-size: 150%">
+                                <a><?php echo $riga[1]?> <br> </a>
+                                <?php echo $riga[2]?> <br>
+                            </div>
+                        </li>
+
+                        <?php
+                    }
+                    ?>
+
+
                 </ul>
             </div>
         </div>
