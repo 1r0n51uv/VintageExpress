@@ -115,28 +115,28 @@
                 <article class="span6">
                     <h3>Registrati</h3>
                     <div class="inner-1">
-                        <form id="contact-form" action="#">
+                        <form id="contact-form" action="Registrazione.php" method="post">
                             <div class="success"> Your message has been sent succesfuly!<strong> We will be in touch soon.</strong> </div>
                             <fieldset>
                                 <div>
                                     <label class="name">
-                                        <input type="text" placeholder="Nome">
+                                        <input type="text" placeholder="Nome" name="Nome">
                                         <br>
                                         <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
                                 </div>
                                 <div>
                                     <label class="phone">
-                                        <input type="tel" placeholder="Email">
+                                        <input type="text" placeholder="Email" name="Email">
                                         <br>
                                         <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
                                 </div>
                                 <div>
                                     <label class="email">
-                                        <input type="email" placeholder="Password">
+                                        <input type="password" placeholder="Password" name="Password">
                                         <br>
                                         <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
                                 </div>
-                                <div class="buttons-wrapper"> <a class="btn btn-1" data-type="reset">Cancella</a> <a class="btn btn-1" data-type="submit">Registrati</a></div>
+                                <div class="buttons-wrapper"> <a class="btn btn-1" data-type="reset">Cancella</a> <button class="btn btn-1" type="submit">Registrati</button></div>
                             </fieldset>
                         </form>
                     </div>
