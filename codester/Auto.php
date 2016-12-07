@@ -72,12 +72,12 @@ $num_righe = mysqli_num_rows($result);
             <div class="span12">
                 <div class="navbar navbar_">
                     <div class="container">
-                        <h1 class="brand brand_"><a href="HomeLoggato.php"><img alt="" src="img/logo3.png"> </a></h1>
+                        <h1 class="brand brand_"><a href="Home.php"><img alt="" src="img/logo3.png"> </a></h1>
                         <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
                         <div class="nav-collapse nav-collapse_  collapse">
                             <ul class="nav sf-menu">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li class="sub-menu"><a href="#">Auto</a href=""></li>
+                                <li class="active"><a href="Home.php">Home</a></li>
+                                <li class="sub-menu"><a href="Auto.php">Auto</a href=""></li>
                                 <li><a href="Login.php">Login</a></li>
                             </ul>
                         </div>
@@ -111,10 +111,10 @@ $num_righe = mysqli_num_rows($result);
 
                         <li class="box">
                             <a href="<?php echo $riga[5]?>" class="magnifier">
-                                <img alt="" src="<?php echo $riga[6]?>" href="Custom.php">
+                                <img alt="" src="<?php echo $riga[6]?>">
                             </a>
                             <div style="font-size: 150%">
-                                <a><?php echo $riga[1]?> <br> </a>
+                                <a href="Custom.php"><?php echo $riga[1]?> <br> </a>
                                 <?php echo $riga[2]?> <br>
                             </div>
                         </li>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,12 +60,12 @@
             <div class="span12">
                 <div class="navbar navbar_">
                     <div class="container">
-                        <h1 class="brand brand_"><a href="HomeLoggato.php"><img alt="" src="img/logo3.png"> </a></h1>
+                        <h1 class="brand brand_"><a href="Home.php"><img alt="" src="img/logo3.png"> </a></h1>
                         <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
                         <div class="nav-collapse nav-collapse_  collapse">
                             <ul class="nav sf-menu">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li class="sub-menu"><a href="#">Auto</a href=""></li>
+                                <li class="active"><a href="Home.php">Home</a></li>
+                                <li class="sub-menu"><a href="Auto.php">Auto</a href=""></li>
                                 <li><a href="Login.php">Login</a></li>
                             </ul>
                         </div>
@@ -75,9 +76,6 @@
     </div>
 </header>
 
-
-
-
 <div class="bg-content">
     <div class="container">
         <div class="row">
@@ -85,11 +83,11 @@
                 <!-- slider -->
                 <div class="flexslider">
                     <ul class="slides">
-                        <li> <img src="img/Car/Ducato.jpg" alt=""> </li>
-                        <li> <img src="img/Car/Scudo.jpg" alt=""> </li>
-                        <li> <img src="img/Car/Doblo.jpg" alt=""> </li>
-                        <li> <img src="img/Car/Ducato.jpg" alt=""> </li>
-                        <li> <img src="img/Car/Doblo.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Fiat/Ducato.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Ford/Tourneo.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Mercedes/Citan.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Renault/Traffic.jpg" alt=""> </li>
+                        <li> <img src="img/Car/Volkswagen/Wcaddy.jpg" alt=""> </li>
 
                     </ul>
                 </div>
@@ -110,146 +108,26 @@
             <div class="container">
                 <div class="row">
                     <article class="span12">
-                        <h4>Le più gettonate</h4>
+                        <h4>In vetrina</h4>
                     </article>
                     <div class="clear"></div>
                     <ul class="portfolio clearfix">
-                        <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/1.jpg"></a></li>
-                        <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/2.jpg"></a></li>
-                        <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/3.jpg"></a></li>
-                        <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/4.jpg"></a></li>
-                        <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/5.jpg"></a></li>
-                        <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/6.jpg"></a></li>
-                        <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/7.jpg"></a></li>
-                        <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/work/8.jpg"></a></li>
+                        <li class="box"><a href="img/Car/Mercedes/ClasseV.jpg" class="magnifier" ><img alt="" src="img/Car2/Mercedes/ClasseV.jpg"></a></li>
+                        <li class="box"><a href="img/Car/Peugeot/MasterL3.jpg" class="magnifier" ><img alt="" src="img/Car2/Peugeot/MasterL3.jpg"></a></li>
+                        <li class="box"><a href="img/Car/Volkswagen/Wt5.jpg" class="magnifier" ><img alt="" src="img/Car2/Volkswagen/Wt5.jpg"></a></li>
+                        <li class="box"><a href="img/Car/Ford/Connect.jpg" class="magnifier" ><img alt="" src="img/Car2/Ford/Connect.jpg"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="row-2">
             <div class="container">
-                <h3>Completly Customizable and Responsive</h3>
-                <h3>Easy to Use. Totally Free to Download. Made with love!</h3>
-                <p>The complete template is created using the Bootstrap framework, which is highly customizable with lots of options.</p>
-                <a href="#" class="btn btn-1">Download</a> </div>
+                <h3>Cerca l'auto giusta per te e le tue esigenze</h3>
+                <p>CE VO NA DESCRIZION CCA'</p>
         </div>
-        <div class="row-1">
-            <div class="container">
-                <div class="row">
-                    <article class="span12">
-                        <h4>From blog</h4>
-                    </article>
-                    <ul class="thumbnails thumbnails-1">
-                        <li class="span3">
-                            <div class="thumbnail thumbnail-1">
-                                <h3>Web Design</h3>
-                                <img src="img/blog-featured-01.jpg" alt="">
-                                <section> <a href="#">
-                                        <h3>At vero eos et accusamus et iusto </h3>
-                                    </a>
-                                    <div class="meta">
-                                        <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
-                                        <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
-                                        <a href="#" class="comments"><i class="icon-comment"></i> 7 comments</a> </div>
-                                    <div class="clear"></div>
-                                    <p>Vivamus sollicitudin libero auctor arcu pulvinar commodo.</p>
-                                    <a href="#" class="btn btn-1">Read More</a> </section>
-                            </div>
-                        </li>
-                        <li class="span3">
-                            <div class="thumbnail thumbnail-1">
-                                <h3>Graphics</h3>
-                                <img src="img/blog-featured-02.jpg" alt="">
-                                <section> <a href="#">
-                                        <h3>Deleniti atque corrupti quos</h3>
-                                    </a>
-                                    <div class="meta">
-                                        <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
-                                        <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
-                                        <a href="#" class="comments"><i class="icon-comment"></i> 4 comments</a> </div>
-                                    <div class="clear"></div>
-                                    <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
-                                    <a href="#" class="btn btn-1">Read More</a> </section>
-                            </div>
-                        </li>
-                        <li class="span3">
-                            <div class="thumbnail thumbnail-1">
-                                <h3>Social Media</h3>
-                                <img src="img/blog-featured-03.jpg" alt="">
-                                <section> <a href="#">
-                                        <h3>Similique sunt in culpa qui officia</h3>
-                                    </a>
-                                    <div class="meta">
-                                        <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
-                                        <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
-                                        <a href="#" class="comments"><i class="icon-comment"></i> 9 comments</a> </div>
-                                    <div class="clear"></div>
-                                    <p>Pellentesque mi justo, laoreet non bibendum non, auctor imperdiet eros.</p>
-                                    <a href="#" class="btn btn-1">Read More</a> </section>
-                            </div>
-                        </li>
-                        <li class="span3">
-                            <div class="thumbnail thumbnail-1">
-                                <h3 class="title-1 extra">Photography</h3>
-                                <img src="img/blog-featured-04.jpg" alt="">
-                                <section> <a href="#">
-                                        <h3>Similique sunt in culpa qui officia</h3>
-                                    </a>
-                                    <div class="meta">
-                                        <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
-                                        <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
-                                        <a href="#" class="comments"><i class="icon-comment"></i> 1 comment</a> </div>
-                                    <div class="clear"></div>
-                                    <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
-                                    <a href="#" class="btn btn-1">Read More</a> </section>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
         </div>
-        <div class="container">
-            <div class="row">
-                <article class="span6">
-                    <h3>Shortly about us</h3>
-                    <div class="wrapper">
-                        <figure class="img-indent"><img src="img/15.jpg " alt=""></figure>
-                        <div class="inner-1 overflow extra">
-                            <div class="txt-1">Mauris scelerisque odio quis leo viverra ac porttitor sem blandit. Sed tincidunt mattis varius. Nunc sodales ipsum nisl, eget lacinia nibh.</div>
-                            Cras lacus tortor, tempus vitae porta nec, hendrerit id dolor. Nam volutpat gravida porta. Suspendisse turpis nibh, volutpat. </div>
-                    </div>
-                </article>
-                <article class="span6">
-                    <h3>Some quick links</h3>
-                    <div class="wrapper">
-                        <ul class="list list-pad">
-                            <li><a href="#">Campaigns</a></li>
-                            <li><a href="#">Portraits</a></li>
-                            <li><a href="#">Fashion</a></li>
-                            <li><a href="#">Fine Art</a></li>
-                        </ul>
-                        <ul class="list list-pad">
-                            <li><a href="#">Campaigns</a></li>
-                            <li><a href="#">Portraits</a></li>
-                            <li><a href="#">Fashion</a></li>
-                            <li><a href="#">Fine Art</a></li>
-                        </ul>
-                        <ul class="list list-pad">
-                            <li><a href="#">Campaigns</a></li>
-                            <li><a href="#">Portraits</a></li>
-                            <li><a href="#">Fashion</a></li>
-                            <li><a href="#">Fine Art</a></li>
-                        </ul>
-                        <ul class="list">
-                            <li><a href="#">Advertising</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Love story</a></li>
-                            <li><a href="#">Landscapes</a></li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </div>
+
     </div>
 </div>
 
@@ -263,7 +141,7 @@
             <li><a class="icon-3" href="#"></a></li>
             <li><a class="icon-4" href="#"></a></li>
         </ul>
-        <div class="privacy pull-left">&copy; 2013 | <a href="http://www.dzyngiri.com">Dzyngiri</a> | Demo Illustrations by <a href="http://justinmezzell.com">Justin Mezzell</a></div>
+        <div class="privacy pull-left">&copy; 2016 | <a href="">Vintage Express</a> | Realized by Bellini Gianluca & Francesco Tripicchio</div>
     </div>
 </footer>
 <script src="js/bootstrap.js"></script>
