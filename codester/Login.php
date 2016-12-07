@@ -91,19 +91,20 @@
                 <article class="span6">
                     <h3>Login</h3>
                     <div class="inner-1">
-                        <form id="contact-form" action="#">
+                        <form id="contact-form" action="ConnectLogin.php" method="post">
                             <div class="success"> Your message has been sent succesfuly!<strong> We will be in touch soon.</strong> </div>
                             <fieldset>
                                 <div>
                                     <label class="name">
-                                        <input type="text" placeholder="Email">
+                                        <input type="text" placeholder="Email" name="Username">
                                         <br>
                                         <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
                                 </div>
                                 <div>
                                     <label class="phone">
-                                        <input type="tel" placeholder="Password" ">
+                                        <input type="tel" placeholder="Password" name="Password" ">
                                         <br>
+                                        <input type="submit" placeholder="Invia" name="sub">
                                         <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
                                 </div>
                                 <div class="buttons-wrapper"><a class="btn btn-1" data-type="submit">Login</a><a class="btn btn-1" data-type="reset">Password dimenticata?</a> </div>
@@ -180,3 +181,4 @@
 </body>
 
 </html>
+
