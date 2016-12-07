@@ -91,7 +91,7 @@
                 <article class="span6">
                     <h3>Login</h3>
                     <div class="inner-1">
-                        <form id="contact-form" action="ConnectLogin.php" method="post">
+                        <form id="contact-form" action="LoginControl.php" method="post">
                             <div class="success"> Your message has been sent succesfuly!<strong> We will be in touch soon.</strong> </div>
                             <fieldset>
                                 <div>
@@ -102,12 +102,11 @@
                                 </div>
                                 <div>
                                     <label class="phone">
-                                        <input type="tel" placeholder="Password" name="Password" ">
+                                        <input type="password" placeholder="Password" name="Password" ">
                                         <br>
-                                        <input type="submit" placeholder="Invia" name="sub">
                                         <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
                                 </div>
-                                <div class="buttons-wrapper"><a class="btn btn-1" data-type="submit">Login</a><a class="btn btn-1" data-type="reset">Password dimenticata?</a> </div>
+                                <div class="buttons-wrapper"><button class="btn btn-1" type="submit">Login</button><a class="btn btn-1" data-type="reset">Password dimenticata?</a> </div>
                             </fieldset>
                         </form>
                     </div>
