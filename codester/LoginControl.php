@@ -14,7 +14,7 @@ for ($i = 0; $i < $num_righe; $i++) {
     if ($riga[2] == $email && $riga[3] == $pass) {
         echo "LOGIN OK";
     } else {
-
+        echo "no";
     }
 }
 

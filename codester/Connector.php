@@ -11,5 +11,4 @@ class Connector
         return mysqli_connect($host, $user, $pass, $db);
     }
 
-
 }

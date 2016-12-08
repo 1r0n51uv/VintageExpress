@@ -104,28 +104,25 @@ $num_righe = mysqli_num_rows($result);
                 <ul class="portfolio clearfix">
 
                     <?php
+                    session_start();
                     for ($i = 0; $i < $num_righe; $i++) {
                         $riga = mysqli_fetch_row($result);
-
                         ?>
-
                         <li class="box">
                             <a href="<?php echo $riga[5]?>" class="magnifier">
                                 <img alt="" src="<?php echo $riga[6]?>">
                             </a>
                             <div style="font-size: 150%">
-                                <a href="Custom.php"><?php echo $riga[1]?> <br> </a>
+                                <a href="Custom.php?code=<?php echo $riga[0]?>"><?php echo $riga[1]?> <br> </a>
                                 <?php echo $riga[2]?> <br>
                             </div>
                         </li>
-
                         <?php
                     }
                     ?>
 
-
                 </ul>
-            </div>
+                </div>
         </div>
     </div>
 </div>
