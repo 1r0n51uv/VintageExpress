@@ -65,14 +65,9 @@
                         <div class="nav-collapse nav-collapse_  collapse">
                             <ul class="nav sf-menu">
                                 <li class="active"><a href="Home.php">Home</a></li>
-                                <li class="sub-menu"><a href="process.html">Auto</a>
-                                    <ul>
-                                        <li><a href="#">Fiat</a></li>
-                                        <li><a href="#">Alfa Romeo</a></li>
-                                        <li><a href="#">Peugeot</a></li>
-                                    </ul>
-                                </li>                                <li><a href="">Login</a></li>
-                                <li><a href="">Registrati</a></li>
+                                <li class="sub-menu"><a href="Auto.php">Auto</a>
+                                </li>                                <li><a href="Login.php">Login</a></li>
+                                <li><a href="Login.php">Registrati</a></li>
                             </ul>
                         </div>
                     </div>
@@ -92,19 +87,19 @@
                     <h3>Login</h3>
                     <div class="inner-1">
                         <form id="contact-form" action="LoginControl.php" method="post">
-                            <div class="success"> Your message has been sent succesfuly!<strong> We will be in touch soon.</strong> </div>
+                            <div class="success"> Il login è avvenuto con successo!<strong> A presto.</strong> </div>
                             <fieldset>
                                 <div>
                                     <label class="name">
                                         <input type="text" placeholder="Email" name="Username">
                                         <br>
-                                        <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
+                                        <span class="error">*Questo indirizzo email è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
                                 </div>
                                 <div>
                                     <label class="phone">
                                         <input type="password" placeholder="Password" name="Password" ">
                                         <br>
-                                        <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
+                                        <span class="error">*Questa password è sbagliata.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
                                 </div>
                                 <div class="buttons-wrapper"><button class="btn btn-1" type="submit">Login</button><a class="btn btn-1" data-type="reset">Password dimenticata?</a> </div>
                             </fieldset>
@@ -115,25 +110,25 @@
                     <h3>Registrati</h3>
                     <div class="inner-1">
                         <form id="contact-form" action="Registrazione.php" method="post">
-                            <div class="success"> Your message has been sent succesfuly!<strong> We will be in touch soon.</strong> </div>
+                            <div class="success"> La registrazione è avvenuta con successo!<strong> A presto.</strong> </div>
                             <fieldset>
                                 <div>
                                     <label class="name">
                                         <input type="text" placeholder="Nome" name="Nome">
                                         <br>
-                                        <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
+                                        <span class="error">*Questo nome non è corretto.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
                                 </div>
                                 <div>
                                     <label class="phone">
                                         <input type="text" placeholder="Email" name="Email">
                                         <br>
-                                        <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
+                                        <span class="error">*Questo indirizzo email è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
                                 </div>
                                 <div>
                                     <label class="email">
                                         <input type="password" placeholder="Password" name="Password">
                                         <br>
-                                        <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
+                                        <span class="error">*Questa password è sbagliata.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
                                 </div>
                                 <div class="buttons-wrapper"> <a class="btn btn-1" data-type="reset">Cancella</a> <button class="btn btn-1" type="submit">Registrati</button></div>
                             </fieldset>
@@ -144,28 +139,28 @@
             </div>
             <div class="row">
                 <article class="span12">
-                    <h4>Services</h4>
+                    <h4>LE NOSTRE AUTO. . .</h4>
                 </article>
                 <div class="clear"></div>
                 <ul class="thumbnails thumbnails-1 list-services">
                     <li class="span4">
-                        <div class="thumbnail thumbnail-1"> <img src="img/service-1.jpg" alt="">
-                            <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
-                                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+                        <div class="thumbnail thumbnail-1"> <img src="img/Car/Fiat/Doblo.jpg" alt="">
+                            <section> <a href="#" class="link-1">Fiat Doblò</a>
+                                <p>Viene e prova nei nostri showroom la nuova Fiat Doblò 2016.</p>
                             </section>
                         </div>
                     </li>
                     <li class="span4">
-                        <div class="thumbnail thumbnail-1"> <img src="img/service-2.jpg" alt="">
-                            <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
-                                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+                        <div class="thumbnail thumbnail-1"> <img src="img/Car/Ford/Connect.jpg" alt="">
+                            <section> <a href="#" class="link-1">Ford Connect</a>
+                                <p>Viene e prova nei nostri showroom la nuova Ford Connect 2016.</p>
                             </section>
                         </div>
                     </li>
                     <li class="span4">
-                        <div class="thumbnail thumbnail-1"> <img src="img/service-3.jpg" alt="">
-                            <section> <a href="#" class="link-1">At vero eos et accusamus et iusto </a>
-                                <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
+                        <div class="thumbnail thumbnail-1"> <img src="img/Car/Renault/Traffic.jpg" alt="">
+                            <section> <a href="#" class="link-1">Renault Traffic</a>
+                                <p>Viene e prova nei nostri showroom la nuova Renault Traffic 2016.</p>
                             </section>
                         </div>
                     </li>

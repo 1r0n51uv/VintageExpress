@@ -123,7 +123,6 @@
         <div class="row-2">
             <div class="container">
                 <h3>Cerca l'auto giusta per te e le tue esigenze</h3>
-                <p>CE VO NA DESCRIZION CCA'</p>
         </div>
 
         </div>
