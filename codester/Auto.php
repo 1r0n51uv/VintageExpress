@@ -7,8 +7,6 @@ $result = mysqli_query($db->getConnector(), $sql);
 $num_righe = mysqli_num_rows($result);
 
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -104,7 +102,6 @@ $num_righe = mysqli_num_rows($result);
                 <ul class="portfolio clearfix">
 
                     <?php
-                    session_start();
                     for ($i = 0; $i < $num_righe; $i++) {
                         $riga = mysqli_fetch_row($result);
                         ?>

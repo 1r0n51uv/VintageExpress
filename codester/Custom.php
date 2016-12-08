@@ -4,6 +4,23 @@ include 'Queries.php';
 
 $code = $_GET['code'];
 
+$riga = null;
+$riga2 = null;
+$db = new Connector();
+$sql = "SELECT * FROM Annuncio Where Codice = $code";
+$result = mysqli_query($db->getConnector(), $sql);
+$num_righe = mysqli_num_rows($result);
+for ($i = 0; $i < $num_righe; $i++) {
+    $riga = mysqli_fetch_row($result);
+}
+
+$sql2 = "SELECT * FROM Utente Where Id = $riga[8]";
+$result2 = mysqli_query($db->getConnector(), $sql2);
+$num_righe2 = mysqli_num_rows($result2);
+for ($i = 0; $i < $num_righe2; $i++) {
+    $riga2 = mysqli_fetch_row($result2);
+}
+
 
 ?>
 
@@ -94,16 +111,28 @@ $code = $_GET['code'];
                 <article class="span8">
                     <div class="inner-1">
 
-                                <h3>Morbi ullamcorper leo eget varius elementum</h3>
-                                <time datetime="2012-11-09" class="date-1"><i class="icon-calendar icon-white"></i> 9.11.2012</time>
-                                <div class="name-author"><i class="icon-user icon-white"></i> <a href="#">Admin</a></div>
-                                <a href="#" class="comments"><i class="icon-comment icon-white"></i> 11 comments</a>
-                                <div class="clear"></div>
-                                <img alt="" src="img/blog-1.jpg">
-                                <p>Morbi ullamcorper, leo eget varius elementum, orci leo feugiat lectus, vitae lobortis mauris velit tempor erat. Etiam eget orci at massa pretium fringilla ac non tortor. Fusce sed velit risus, vitae vehicula quam. Cras at turpis urna, eget volutpat neque. Nullam porttitor, est interdum placerat pharetra, erat sapien aliquet urna, at commodo risus tellus eu nunc.</p>
-                                <a href="#" class="btn btn-1">Read More</a> </li>
+                                <h3><?php echo $riga[1]?> <br>
+                                    <?php echo $riga[2]?>          </h3>
+                        <div class="name-author"><i class="icon-user icon-white"></i> <a><?php echo $riga2[2]?></a></div>
+                        <img alt="" src="<?php echo $riga[5]?>">
+                                <p>Grazie al kit di ribassamento del pianale, progettato e realizzato da Focaccia Group, Nuovo Fiat Doblò Maxi F-Style One è ideale per famiglie, associazioni e taxi che hanno necessità di trasportare una persona con disabilità in carrozzina e si contraddistingue per la sicurezza, il confort e il design. </p>
 
                     </div>
+                </article>
+                <article class="span4">
+                    <h3 class="extra"></h3>
+                    <form id="search" action="#" method="GET" accept-charset="utf-8" >
+                        <div class="clearfix">
+                    </form>
+                    <h3>Informazioni</h3>
+                    <ul class="list extra extra1">
+                        <li>Marca:<h4><?php echo $riga[1]?></h4></li>
+                        <li>Modello:<h4><?php echo $riga[2]?></h4></li>
+                        <li>Prezzo:<h4><?php echo $riga[3]?>€</h4></li>
+                        <li>Posizione:<h4><?php echo $riga[4]?></h4></li>
+
+                    </ul>
+
                 </article>
             </div>
         </div>
