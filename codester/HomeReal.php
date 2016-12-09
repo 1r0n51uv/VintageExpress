@@ -1,16 +1,9 @@
 <?php
-include 'Queries.php';
-
-$db = new Connector();
-$sql = "SELECT * FROM Annuncio";
-$result = mysqli_query($db->getConnector(), $sql);
-$num_righe = mysqli_num_rows($result);
-
 session_start();
 if (isset($_SESSION['Username'])) {
     $user = $_SESSION['Username'];
 
-    ?>
+?>
 
     <!DOCTYPE html>
     <html lang="en">
@@ -50,9 +43,7 @@ if (isset($_SESSION['Username'])) {
             });
         </script>
         <!--[if lt IE 8]>
-        <div style='text-align:center'><a
-                href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img
-                src="http://www.theie6countdown.com/img/upgrade.jpg" border="0" alt=""/></a></div>
+        <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
         <![endif]-->
         <!--[if (gt IE 9)|!(IE)]><!-->
         <!--<![endif]-->
@@ -101,40 +92,63 @@ if (isset($_SESSION['Username'])) {
     </header>
 
 
+
+
     <div class="bg-content">
-        <!-- Content -->
-        <div id="content">
-            <div class="ic"></div>
-            <div class="container">
-                <div class="row">
-                    <article class="span12">
-                        <h4>Le nostre auto</h4>
-                    </article>
-                    <div class="clear"></div>
-                    <ul class="portfolio clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <!-- slider -->
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li> <img src="img/Car/Fiat/Ducato.jpg" alt=""> </li>
+                            <li> <img src="img/Car/Ford/Tourneo.jpg" alt=""> </li>
+                            <li> <img src="img/Car/Mercedes/Citan.jpg" alt=""> </li>
+                            <li> <img src="img/Car/Renault/Traffic.jpg" alt=""> </li>
+                            <li> <img src="img/Car/Volkswagen/Wcaddy.jpg" alt=""> </li>
 
-                        <?php
-                        for ($i = 0; $i < $num_righe; $i++) {
-                            $riga = mysqli_fetch_row($result);
-                            ?>
-                            <li class="box">
-                                <a href="<?php echo $riga[5] ?>" class="magnifier">
-                                    <img alt="" src="<?php echo $riga[6] ?>">
-                                </a>
-                                <div style="font-size: 150%">
-                                    <a href="Custom.php?code=<?php echo $riga[0] ?>"><?php echo $riga[1] ?> <br> </a>
-                                    <?php echo $riga[2] ?> <br>
-                                </div>
-                            </li>
-                            <?php
-                        }
-                        ?>
-
-                    </ul>
+                        </ul>
+                    </div>
+                    <span id="responsiveFlag"></span>
+                    <div class="block-slogan">
+                        <h2>Auto per tutti!</h2>
+                        <div>
+                            <p>Su Vintage Express puoi trovare una lista di auto dedite al trasporto per disabili. Mettiti in contatto con la più vicina concessionaria, grazie alle informazioni che troverai per ogni autoveicolo</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- content -->
+        <div id="content" class="content-extra">
+            <div class="ic"></div>
+            <div class="row-1">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <h4>In vetrina</h4>
+                        </article>
+                        <div class="clear"></div>
+                        <ul class="portfolio clearfix">
+                            <li class="box"><a href="img/Car/Mercedes/ClasseV.jpg" class="magnifier" ><img alt="" src="img/Car2/Mercedes/ClasseV.jpg"></a></li>
+                            <li class="box"><a href="img/Car/Peugeot/MasterL3.jpg" class="magnifier" ><img alt="" src="img/Car2/Peugeot/MasterL3.jpg"></a></li>
+                            <li class="box"><a href="img/Car/Volkswagen/Wt5.jpg" class="magnifier" ><img alt="" src="img/Car2/Volkswagen/Wt5.jpg"></a></li>
+                            <li class="box"><a href="img/Car/Ford/Connect.jpg" class="magnifier" ><img alt="" src="img/Car2/Ford/Connect.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="container">
+                    <h3>Cerca l'auto giusta per te e le tue esigenze</h3>
+                </div>
+
+            </div>
+
+        </div>
     </div>
+
+
     <!-- footer -->
     <footer>
         <div class="container clearfix">
@@ -144,21 +158,21 @@ if (isset($_SESSION['Username'])) {
                 <li><a class="icon-3" href="#"></a></li>
                 <li><a class="icon-4" href="#"></a></li>
             </ul>
-            <div class="privacy pull-left">&copy; 2013 | <a href="http://www.dzyngiri.com">Dzyngiri</a> | Demo
-                Illustrations by <a href="http://justinmezzell.com">Justin Mezzell</a></div>
+            <div class="privacy pull-left">&copy; 2016 | <a href="">Vintage Express</a> | Realized by Bellini Gianluca & Francesco Tripicchio</div>
         </div>
     </footer>
     <script src="js/bootstrap.js"></script>
-
-
     </body>
     </html>
 
 
     <?php
+
 } else {
 
     ?>
+
+
 
 
     <!DOCTYPE html>
@@ -199,9 +213,7 @@ if (isset($_SESSION['Username'])) {
             });
         </script>
         <!--[if lt IE 8]>
-        <div style='text-align:center'><a
-                href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img
-                src="http://www.theie6countdown.com/img/upgrade.jpg" border="0" alt=""/></a></div>
+        <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
         <![endif]-->
         <!--[if (gt IE 9)|!(IE)]><!-->
         <!--<![endif]-->
@@ -246,39 +258,60 @@ if (isset($_SESSION['Username'])) {
     </header>
 
     <div class="bg-content">
-        <!-- Content -->
-        <div id="content">
-            <div class="ic"></div>
-            <div class="container">
-                <div class="row">
-                    <article class="span12">
-                        <h4>Le nostre auto</h4>
-                    </article>
-                    <div class="clear"></div>
-                    <ul class="portfolio clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <!-- slider -->
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li> <img src="img/Car/Fiat/Ducato.jpg" alt=""> </li>
+                            <li> <img src="img/Car/Ford/Tourneo.jpg" alt=""> </li>
+                            <li> <img src="img/Car/Mercedes/Citan.jpg" alt=""> </li>
+                            <li> <img src="img/Car/Renault/Traffic.jpg" alt=""> </li>
+                            <li> <img src="img/Car/Volkswagen/Wcaddy.jpg" alt=""> </li>
 
-                        <?php
-                        for ($i = 0; $i < $num_righe; $i++) {
-                            $riga = mysqli_fetch_row($result);
-                            ?>
-                            <li class="box">
-                                <a href="<?php echo $riga[5] ?>" class="magnifier">
-                                    <img alt="" src="<?php echo $riga[6] ?>">
-                                </a>
-                                <div style="font-size: 150%">
-                                    <a href="Custom.php?code=<?php echo $riga[0] ?>"><?php echo $riga[1] ?> <br> </a>
-                                    <?php echo $riga[2] ?> <br>
-                                </div>
-                            </li>
-                            <?php
-                        }
-                        ?>
-
-                    </ul>
+                        </ul>
+                    </div>
+                    <span id="responsiveFlag"></span>
+                    <div class="block-slogan">
+                        <h2>Auto per tutti!</h2>
+                        <div>
+                            <p>Su Vintage Express puoi trovare una lista di auto dedite al trasporto per disabili. Mettiti in contatto con la più vicina concessionaria, grazie alle informazioni che troverai per ogni autoveicolo</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- content -->
+        <div id="content" class="content-extra">
+            <div class="ic"></div>
+            <div class="row-1">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <h4>In vetrina</h4>
+                        </article>
+                        <div class="clear"></div>
+                        <ul class="portfolio clearfix">
+                            <li class="box"><a href="img/Car/Mercedes/ClasseV.jpg" class="magnifier" ><img alt="" src="img/Car2/Mercedes/ClasseV.jpg"></a></li>
+                            <li class="box"><a href="img/Car/Peugeot/MasterL3.jpg" class="magnifier" ><img alt="" src="img/Car2/Peugeot/MasterL3.jpg"></a></li>
+                            <li class="box"><a href="img/Car/Volkswagen/Wt5.jpg" class="magnifier" ><img alt="" src="img/Car2/Volkswagen/Wt5.jpg"></a></li>
+                            <li class="box"><a href="img/Car/Ford/Connect.jpg" class="magnifier" ><img alt="" src="img/Car2/Ford/Connect.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="container">
+                    <h3>Cerca l'auto giusta per te e le tue esigenze</h3>
+                </div>
+
+            </div>
+
+        </div>
     </div>
+
+
     <!-- footer -->
     <footer>
         <div class="container clearfix">
@@ -288,18 +321,20 @@ if (isset($_SESSION['Username'])) {
                 <li><a class="icon-3" href="#"></a></li>
                 <li><a class="icon-4" href="#"></a></li>
             </ul>
-            <div class="privacy pull-left">&copy; 2013 | <a href="http://www.dzyngiri.com">Dzyngiri</a> | Demo
-                Illustrations by <a href="http://justinmezzell.com">Justin Mezzell</a></div>
+            <div class="privacy pull-left">&copy; 2016 | <a href="">Vintage Express</a> | Realized by Bellini Gianluca & Francesco Tripicchio</div>
         </div>
     </footer>
     <script src="js/bootstrap.js"></script>
-
-
     </body>
     </html>
 
-    <?php
 
+
+
+
+
+
+    <?php
 }
 
-    ?>
+?>

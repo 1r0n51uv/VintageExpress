@@ -2,6 +2,8 @@
 
 include "Connector.php";
 
+session_start();
+
 $email = $_POST['Username'];
 $pass = $_POST['Password'];
 
@@ -12,9 +14,11 @@ $num_righe = mysqli_num_rows($result2);
 for ($i = 0; $i < $num_righe; $i++) {
     $riga = mysqli_fetch_row($result2);
     if ($riga[2] == $email && $riga[3] == $pass) {
-        echo "LOGIN OK";
+        $_SESSION['Username'] = $email;
+        header("location: HomeReal.php");
     } else {
-        echo "no";
+        header("location: HomeReal.php");
+
     }
 }
 

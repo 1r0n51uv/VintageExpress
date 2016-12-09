@@ -11,7 +11,7 @@ $nome = $_POST['Nome'];
 $email = $_POST['Email'];
 $pass = $_POST['Password'];
 $db = new Connector();
-$sql = "INSERT INTO `Utente` (`Codice`, `Nome`, `Username`, `Password`) VALUES (NULL, '$nome', '$email', '$pass')";
+$sql = "INSERT INTO `Utente` (`Id`, `Nome`, `Username`, `Password`) VALUES (NULL, '$nome', '$email', '$pass')";
 $result = mysqli_query($db->getConnector(), $sql);
 
 
