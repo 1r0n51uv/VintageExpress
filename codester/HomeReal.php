@@ -74,7 +74,7 @@ if (isset($_SESSION['Username'])) {
                                     <li class="sub-menu"><a href="#">Auto</a>
                                         <ul>
                                             <li><a href="Auto.php">Visualizza</a></li>
-                                            <li><a href="#">Inserisci</a></li>
+                                            <li><a href="InserisciAnnuncio.php">Inserisci</a></li>
                                         </ul>
                                     </li>
                                     <li class="sub-menu active"><a href="#"><?php echo $user?></a>

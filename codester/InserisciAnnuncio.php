@@ -79,110 +79,110 @@
             </div>
         </div>
     </div>
+</header>
 
+<div class="bg-content">
 
-    <div class="bg-content">
+    <div id="content" >
+        <div class="ic" ></div>
+        <div class="container">
+            <div class="row">
+                <article class="span6">
+                    <h3>ANNUNCIO</h3>
+                    <div class="inner-1">
+                        <form id="contact-form" action="InserimentoControl.php" method="post">
+                            <div class="success"> Il login è avvenuto con successo!<strong> A presto.</strong> </div>
+                            <fieldset>
+                                <div>
+                                    <label class="Marca">
+                                        <input type="text" placeholder="Marca" name="Marca">
+                                        <br>
+                                        <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="Modello">
+                                        <input type="text" placeholder="Modello" name="Modello">
+                                        <br>
+                                        <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="Prezzo">
+                                        <input type="text" placeholder="Prezzo" name="Prezzo">
+                                        <br>
+                                        <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="Posizione">
+                                        <input type="text" placeholder="Posizione" name="Posizione">
+                                        <br>
+                                        <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="Image">
+                                        <input type="file" placeholder="Image" name="image">
+                                        <br>
+                                        <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="Description">
+                                        <textarea name="Description" placeholder="Descrizione. . ." rows="5" cols="50"></textarea>
+                                        <br>
+                                        <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
+                                </div>
+                                <div class="buttons-wrapper"><button class="btn btn-1" type="submit">Inserisci</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </article>
+                <article class="span6">
+                    <div class="thumbnail thumbnail-1"> <img src="img/Car/Mercedes/ClasseV.jpg" alt="">
+                        <section> <a href="#" class="link-1">Mercedes Classe V</a>
+                            <p>Viene e prova nei nostri showroom la nuova Fiat Classe V 2016.</p>
+                        </section>
+                    </div>
+                    <div class="thumbnail thumbnail-1"> <img src="img/Car/Mercedes/Citan.jpg" alt="">
+                        <section> <a href="#" class="link-1">Mercedes Citan</a>
+                            <p>Viene e prova nei nostri showroom la nuova Mercedes Citan 2016.</p>
+                        </section>
+                    </div>
+                </article>
 
-        <div id="content" >
-            <div class="ic" ></div>
-            <div class="container">
-                <div class="row">
-                    <article class="span6">
-                        <h3>ANNUNCIO</h3>
-                        <div class="inner-1">
-                            <form id="contact-form" action="LoginControl.php" method="post">
-                                <div class="success"> Il login è avvenuto con successo!<strong> A presto.</strong> </div>
-                                <fieldset>
-                                    <div>
-                                        <label class="Marca">
-                                            <input type="text" placeholder="Marca" name="Marca">
-                                            <br>
-                                            <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
-                                    </div>
-                                    <div>
-                                        <label class="Modello">
-                                            <input type="text" placeholder="Modello" name="Modello">
-                                            <br>
-                                            <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
-                                    </div>
-                                    <div>
-                                        <label class="Prezzo">
-                                            <input type="text" placeholder="Prezzo" name="Prezzo">
-                                            <br>
-                                            <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
-                                    </div>
-                                    <div>
-                                        <label class="Posizione">
-                                            <input type="text" placeholder="Posizione" name="Posizione">
-                                            <br>
-                                            <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
-                                    </div>
-                                    <div>
-                                        <label class="Image">
-                                            <input type="file" placeholder="Image" name="Image">
-                                            <br>
-                                            <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
-                                    </div>
-                                    <div>
-                                        <label class="Description">
-                                            <textarea name="Description" placeholder="Descrizione. . ." rows="5" cols="50"></textarea>
-                                            <br>
-                                            <span class="error">*Questo campo è sbagliato.</span> <span class="empty">*Questo campo è obbligatorio.</span> </label>
-                                    </div>
-                                    <div class="buttons-wrapper"><button class="btn btn-1" type="submit">Inserisci</button>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </article>
-                    <article class="span6">
-                        <div class="thumbnail thumbnail-1"> <img src="img/Car/Mercedes/ClasseV.jpg" alt="">
-                            <section> <a href="#" class="link-1">Mercedes Classe V</a>
-                                <p>Viene e prova nei nostri showroom la nuova Fiat Classe V 2016.</p>
-                            </section>
-                        </div>
-                        <div class="thumbnail thumbnail-1"> <img src="img/Car/Mercedes/Citan.jpg" alt="">
-                            <section> <a href="#" class="link-1">Mercedes Citan</a>
-                                <p>Viene e prova nei nostri showroom la nuova Mercedes Citan 2016.</p>
-                            </section>
-                        </div>
-                    </article>
-
-
-                </div>
-                <div class="row">
-                    <article class="span12">
-                        <h4>LE NOSTRE AUTO. . .</h4>
-                    </article>
-                    <div class="clear"></div>
-                    <ul class="thumbnails thumbnails-1 list-services">
-                        <li class="span4">
-                            <div class="thumbnail thumbnail-1"> <img src="img/Car/Fiat/Ducato.jpg" alt="">
-                                <section> <a href="#" class="link-1">Fiat Ducato</a>
-                                    <p>Viene e prova nei nostri showroom la nuova Fiat Ducato 2016.</p>
-                                </section>
-                            </div>
-                        </li>
-                        <li class="span4">
-                            <div class="thumbnail thumbnail-1"> <img src="img/Car/Ford/Tourneo.jpg" alt="">
-                                <section> <a href="#" class="link-1">Ford Tourneo</a>
-                                    <p>Viene e prova nei nostri showroom la nuova Ford Tourneo 2016.</p>
-                                </section>
-                            </div>
-                        </li>
-                        <li class="span4">
-                            <div class="thumbnail thumbnail-1"> <img src="img/Car/Volkswagen/Wcrafter.jpg" alt="">
-                                <section> <a href="#" class="link-1">Volkswagen Crafter</a>
-                                    <p>Viene e prova nei nostri showroom la nuova Renault Crafter 2016.</p>
-                                </section>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
 
             </div>
+            <div class="row">
+                <article class="span12">
+                    <h4>LE NOSTRE AUTO. . .</h4>
+                </article>
+                <div class="clear"></div>
+                <ul class="thumbnails thumbnails-1 list-services">
+                    <li class="span4">
+                        <div class="thumbnail thumbnail-1"> <img src="img/Car/Fiat/Ducato.jpg" alt="">
+                            <section> <a href="#" class="link-1">Fiat Ducato</a>
+                                <p>Viene e prova nei nostri showroom la nuova Fiat Ducato 2016.</p>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div class="thumbnail thumbnail-1"> <img src="img/Car/Ford/Tourneo.jpg" alt="">
+                            <section> <a href="#" class="link-1">Ford Tourneo</a>
+                                <p>Viene e prova nei nostri showroom la nuova Ford Tourneo 2016.</p>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div class="thumbnail thumbnail-1"> <img src="img/Car/Volkswagen/Wcrafter.jpg" alt="">
+                            <section> <a href="#" class="link-1">Volkswagen Crafter</a>
+                                <p>Viene e prova nei nostri showroom la nuova Renault Crafter 2016.</p>
+                            </section>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
-</header>
+</div>
+
 </body>
 </html>
 
